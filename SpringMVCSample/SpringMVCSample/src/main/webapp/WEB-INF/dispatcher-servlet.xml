@@ -15,4 +15,8 @@
     </bean>
 
     <bean name="/" class="com.custom.controller.SampleController"/>
+    <bean name="/opgg" class="com.custom.controller.OpggController"/>
+
+    <mvc:resources mapping="/**.css" location="/WEB-INF/static/css/"/>
+    <mvc:resources mapping="/**.js" location="/WEB-INF/static/js/"/>
 </beans>
