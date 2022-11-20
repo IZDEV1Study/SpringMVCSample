@@ -8,7 +8,7 @@ public class DepartmentDAO {
     String driver = "oracle.jdbc.driver.OracleDriver";
     String url = "jdbc:oracle:thin:@localhost:1521:orcl";
     String id = "C##TEMPUSER";
-    String pw = "qewr1234!@";
+    String pw = "qwer1234";
 
     public DepartmentDAO(){
     }
@@ -16,6 +16,7 @@ public class DepartmentDAO {
     public ArrayList<Department> selectList(){
         ArrayList<Department> list = null;
         ResultSet rs = null;
+
         try {
             Class.forName(driver);
             Connection conn = DriverManager.getConnection(url, id, pw);

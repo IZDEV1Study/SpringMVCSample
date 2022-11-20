@@ -1,16 +1,9 @@
---------------------------------------------------------
---  ∆ƒ¿œ¿Ã ª˝º∫µ  - ¿œø‰¿œ-11ø˘-06-2022   
---------------------------------------------------------
---------------------------------------------------------
---  DDL for Table IZ_TEAM
---------------------------------------------------------
-
-  CREATE TABLE "C##TEMPUSER"."IZ_TEAM" 
-   (	"NAME" VARCHAR2(20 BYTE), 
-	"PEOPLECOUNT" NUMBER(*,0), 
-	"ROLE" VARCHAR2(100 BYTE)
-   ) SEGMENT CREATION IMMEDIATE 
-  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+CREATE TABLE "C##TEMPUSER"."IZ_TEAM"
+(	"NAME" VARCHAR2(20 BYTE),
+     "PEOPLECOUNT" NUMBER(*,0),
+     "ROLE" VARCHAR2(100 BYTE)
+) SEGMENT CREATION IMMEDIATE
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
  NOCOMPRESS LOGGING
   STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
   PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
@@ -18,11 +11,6 @@
   TABLESPACE "SAMPLETABLESPACE" ;
 REM INSERTING into C##TEMPUSER.IZ_TEAM
 SET DEFINE OFF;
-Insert into C##TEMPUSER.IZ_TEAM (NAME,PEOPLECOUNT,ROLE) values ('ø¨±∏1∆¿',14,'º÷∑Áº« ∞≥πﬂ π◊ ¿Ø¡ˆ∫∏ºˆ');
-Insert into C##TEMPUSER.IZ_TEAM (NAME,PEOPLECOUNT,ROLE) values ('ø¨±∏2∆¿',10,'SI «¡∑Œ¡ß∆Æ ºˆ«‡');
-Insert into C##TEMPUSER.IZ_TEAM (NAME,PEOPLECOUNT,ROLE) values ('ø¨±∏3∆¿',6,'¿Ø¡ˆ∫∏ºˆ ±‚º˙¡ˆø¯');
---------------------------------------------------------
---  Constraints for Table IZ_TEAM
---------------------------------------------------------
-
-  ALTER TABLE "C##TEMPUSER"."IZ_TEAM" MODIFY ("NAME" NOT NULL ENABLE);
+Insert into C##TEMPUSER.IZ_TEAM (NAME,PEOPLECOUNT,ROLE) values ('Ïó∞Íµ¨3ÌåÄ',6,'Ïú†ÏßÄÎ≥¥Ïàò Í∏∞Ïà†ÏßÄÏõê');
+Insert into C##TEMPUSER.IZ_TEAM (NAME,PEOPLECOUNT,ROLE) values ('Ïó∞Íµ¨2ÌåÄ',10,'SI ÌîÑÎ°úÏ†ùÌä∏ ÏàòÌñâ');
+Insert into C##TEMPUSER.IZ_TEAM (NAME,PEOPLECOUNT,ROLE) values ('Ïó∞Íµ¨1ÌåÄ',14,'ÏÜîÎ£®ÏÖò Í∞úÎ∞ú Î∞è Ïú†ÏßÄÎ≥¥Ïàò');
