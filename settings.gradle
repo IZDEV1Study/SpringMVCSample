@@ -3,4 +3,5 @@ rootProject.name = 'SpringMVCSample'
 include 'sub-sample'
 include 'jdbc-sample'
 include 'sync-sample'
+include 'restApi-sample'
 
